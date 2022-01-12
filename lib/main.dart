@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => FirstPage(),
+                    builder: (context) => const FirstPage(),
                   ),
                 );
               },
@@ -130,7 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   const SizedBox(width: 15),
                   Link(
-                    target: LinkTarget.self,
+                    target: LinkTarget.blank,
                     uri: Uri.parse("https://github.com/sy2bgreat"),
                     builder: (context, followlink) => GestureDetector(
                         onTap: followlink,
